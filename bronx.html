@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+ <body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between">
+     <div class="flex space-x-7">
+      <div>
+       <a class="flex items-center py-4 px-2" href="#">
+        <img alt="Company logo, a stylized shopping cart" class="h-8 w-8 mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/3bAWou8zxoQ5mS11xtN_X7YE9sHUW4byDGgM6E9N3-U.jpg" width="50"/>
+        <span class="font-semibold text-gray-500 text-lg">
+         Bronx Luggage
+        </span>
+       </a>
+      </div>
+      <div class="hidden md:flex items-center space-x-1">
+       <a class="py-4 px-2 text-gray-500 border-b-4 border-blue-500 font-semibold" href="bronx.html">
+        Home
+       </a>
+       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="shop.html">
+        Shop
+       </a>
+       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="about.html">
+        About
+       </a>
+       <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="contact.html">
+        Contact
+       </a>
+      </div>
+     </div>
+     <div class="hidden md:flex items-center space-x-3">
+      <a class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300" href="login.html">
+       Login
+      </a>
+      <a class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300" href="signup.html">
+       Sign Up
+      </a>
+     </div>
+     <div class="md:hidden flex items-center">
+      <button class="outline-none mobile-menu-button" aria-label="Toggle mobile menu">
+       <i class="fas fa-bars">
+       </i>
+      </button>
+     </div>
+    </div>
+   </div>
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li>
+                    <a class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" href="bronx.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="shop.html">
+                        Shop
+                    </a>
+                </li>
+                <li>
+                    <a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="about.html">
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+  </nav>
+  <!-- Hero Section -->
+  <div class="bg-white py-20">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+     <div class="md:w-1/2">
+      <h1 class="text-4xl font-bold text-gray-800 mb-4">
+       Welcome to E-Shop
+      </h1>
+      <p class="text-gray-600 mb-6">
+       Discover the best products at unbeatable prices. Shop now and enjoy exclusive offers!
+      </p>
+      <a class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-400 transition duration-300" href="shop.html">
+       Shop Now
+      </a>
+     </div>
+     <div class="md:w-1/2 mt-8 md:mt-0">
+      <img alt="A variety of products displayed in an attractive layout" class="w-full h-auto" height="400" src="https://storage.googleapis.com/a1aa/image/Rga_57mHNAWGJ21poXiUfpD3H4BKKe4-8NPLaTfwoyQ.jpg" width="600"/>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Featured Products -->
+  <div class="max-w-6xl mx-auto px-4 py-16">
+   <h2 class="text-3xl font-bold text-gray-800 mb-8">
+    Featured Products
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+     <img alt="Product 1, a stylish modern chair" class="w-full h-64 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/-Yresr7hgooi7MFWOujkneInONAbAgLQYVeQZG1kHWY.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-lg font-semibold text-gray-800">
+       Product 1
+      </h3>
+      <p class="text-gray-600">
+       $29.99
+      </p>
+      <a class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-400 transition duration-300" href="#">
+       Add to Cart
+      </a>
+     </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+     <img alt="Product 2, a sleek modern desk lamp" class="w-full h-64 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/yslxQp0IPEEZMURGABkzSZJ6hvu_y2Ef5UmnA9Sd67w.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-lg font-semibold text-gray-800">
+       Product 2
+      </h3>
+      <p class="text-gray-600">
+       $19.99
+      </p>
+      <a class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-400 transition duration-300" href="#">
+       Add to Cart
+      </a>
+     </div>
+    </div>
+    <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+     <img alt="Product 3, a pair of wireless headphones" class="w-full h-64 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/O70LzLfWFDFIuAafMVm6JW2VD1UxErgfOTUvtDZq2T0.jpg" width="300"/>
+     <div class="p-4">
+      <h3 class="text-lg font-semibold text-gray-800">
+       Product 3
+      </h3>
+      <p class="text-gray-600">
+       $49.99
+      </p>
+      <a class="mt-4 inline-block bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-400 transition duration-300" href="#">
+       Add to Cart
+      </a>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-8">
+   <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col md:flex-row justify-between items-center">
+     <div class="text-white mb-4 md:mb-0">
+      <a class="text-2xl font-bold" href="bronx.html">Bronx Luggage</a>
+     </div>
+     <div class="flex space-x-4">
+      <a class="text-gray-400 hover:text-white transition duration-300" href="bronx.html">Home</a>
+      <a class="text-gray-400 hover:text-white transition duration-300" href="shop.html">Shop</a>
+      <a class="text-gray-400 hover:text-white transition duration-300" href="about.html">About</a>
+      <a class="text-gray-400 hover:text-white transition duration-300" href="contact.html">Contact</a>
+     </div>
+    </div>
+    <div class="text-gray-400 text-center mt-4">
+     © 2023 Bronx Luggage. All rights reserved.
+    </div>
+   </div>
+  </footer>
+  <script>
+   const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+  </script>
+ </body>
+</html>

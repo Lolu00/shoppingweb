@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Bronx Luggage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a class="flex items-center py-4 px-2" href="bronx.html">
+                            <img alt="Company logo, a stylized shopping cart" class="h-8 w-8 mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/3bAWou8zxoQ5mS11xtN_X7YE9sHUW4byDGgM6E9N3-U.jpg" width="50"/>
+                            <span class="font-semibold text-gray-500 text-lg">Bronx Luggage</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="bronx.html">Home</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="shop.html">Shop</a>
+                        <a class="py-4 px-2 text-gray-500 border-b-4 border-blue-500 font-semibold" href="about.html">About</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300" href="login.html">Login</a>
+                    <a class="py-2 px-2 font-medium text-white bg-blue-500 rounded hover:bg-blue-400 transition duration-300" href="signup.html">Sign Up</a>
+                    <button id="cart-btn" class="relative py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300" aria-label="Shopping cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button" aria-label="Toggle mobile menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" href="bronx.html">Home</a></li>
+                <li><a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="shop.html">Shop</a></li>
+                <li><a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="about.html">About</a></li>
+                <li><a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <div class="max-w-6xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">About Bronx Luggage</h1>
+            <p class="text-lg text-gray-600">Quality luggage for every journey</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
+            <div>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6">Our Story</h2>
+                <p class="text-gray-600 mb-4">
+                    Founded in 2010, Bronx Luggage has been dedicated to providing high-quality, durable luggage solutions for travelers worldwide. Our commitment to craftsmanship and innovation has made us a trusted name in the industry.
+                </p>
+                <p class="text-gray-600 mb-4">
+                    We believe that the right luggage can make every journey more enjoyable. That's why we focus on creating products that combine functionality, style, and reliability.
+                </p>
+                <p class="text-gray-600">
+                    From backpacks for the urban explorer to suitcases for the frequent flyer, we have something for every traveler's needs.
+                </p>
+            </div>
+            <div>
+                <img alt="Team working on luggage design" class="w-full h-auto rounded-lg shadow-lg" src="https://storage.googleapis.com/a1aa/image/Rga_57mHNAWGJ21poXiUfpD3H4BKKe4-8NPLaTfwoyQ.jpg"/>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="text-center">
+                <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-shield-alt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Quality Assurance</h3>
+                <p class="text-gray-600">Every product undergoes rigorous testing to ensure durability and performance.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-truck text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">Fast Shipping</h3>
+                <p class="text-gray-600">Quick and reliable delivery to get you traveling sooner.</p>
+            </div>
+            <div class="text-center">
+                <div class="bg-blue-500 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-headset text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold text-gray-800 mb-2">24/7 Support</h3>
+                <p class="text-gray-600">Our customer service team is always ready to help with any questions.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-white mb-4 md:mb-0">
+                    <a class="text-2xl font-bold" href="bronx.html">Bronx Luggage</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a class="text-gray-400 hover:text-white transition duration-300" href="bronx.html">Home</a>
+                    <a class="text-gray-400 hover:text-white transition duration-300" href="shop.html">Shop</a>
+                    <a class="text-gray-400 hover:text-white transition duration-300" href="about.html">About</a>
+                    <a class="text-gray-400 hover:text-white transition duration-300" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="text-gray-400 text-center mt-4">
+                © 2023 Bronx Luggage. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

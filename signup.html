@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Bronx Luggage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a class="flex items-center py-4 px-2" href="bronx.html">
+                            <img alt="Company logo, a stylized shopping cart" class="h-8 w-8 mr-2" height="50" src="https://storage.googleapis.com/a1aa/image/3bAWou8zxoQ5mS11xtN_X7YE9sHUW4byDGgM6E9N3-U.jpg" width="50"/>
+                            <span class="font-semibold text-gray-500 text-lg">Bronx Luggage</span>
+                        </a>
+                    </div>
+                    <div class="hidden md:flex items-center space-x-1">
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="bronx.html">Home</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="shop.html">Shop</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="about.html">About</a>
+                        <a class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300" href="contact.html">Contact</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-3">
+                    <a class="py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300" href="login.html">Login</a>
+                    <a class="py-2 px-2 font-medium text-white bg-blue-500 border-b-4 border-blue-700 rounded" href="signup.html">Sign Up</a>
+                    <button id="cart-btn" class="relative py-2 px-2 font-medium text-gray-500 rounded hover:bg-gray-200 transition duration-300" aria-label="Shopping cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count" class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </button>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button" aria-label="Toggle mobile menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="hidden mobile-menu">
+            <ul class="">
+                <li><a class="block text-sm px-2 py-4 text-white bg-blue-500 font-semibold" href="bronx.html">Home</a></li>
+                <li><a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="shop.html">Shop</a></li>
+                <li><a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="about.html">About</a></li>
+                <li><a class="block text-sm px-2 py-4 hover:bg-blue-500 transition duration-300" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Sign Up Section -->
+    <div class="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-md w-full space-y-8">
+            <div>
+                <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">Create your account</h2>
+                <p class="mt-2 text-center text-sm text-gray-600">
+                    Or
+                    <a href="login.html" class="font-medium text-blue-600 hover:text-blue-500"> sign in to existing account</a>
+                </p>
+            </div>
+            <form id="signup-form" class="mt-8 space-y-6">
+                <div class="rounded-md shadow-sm -space-y-px">
+                    <div>
+                        <label for="name" class="sr-only">Full Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Full Name">
+                    </div>
+                    <div>
+                        <label for="email" class="sr-only">Email address</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Email address">
+                    </div>
+                    <div>
+                        <label for="password" class="sr-only">Password</label>
+                        <input id="password" name="password" type="password" autocomplete="new-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Password">
+                    </div>
+                    <div>
+                        <label for="confirm-password" class="sr-only">Confirm Password</label>
+                        <input id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" required class="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm" placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <div class="flex items-center">
+                    <input id="agree-terms" name="agree-terms" type="checkbox" required class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded">
+                    <label for="agree-terms" class="ml-2 block text-sm text-gray-900">
+                        I agree to the <a href="#" class="text-blue-600 hover:text-blue-500">Terms and Conditions</a>
+                    </label>
+                </div>
+
+                <div>
+                    <button type="submit" class="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                        Create Account
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-white mb-4 md:mb-0">
+                    <a class="text-2xl font-bold" href="bronx.html">Bronx Luggage</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a class="text-gray-400 hover:text-white transition duration-300" href="bronx.html">Home</a>
+                    <a class="text-gray-400 hover:text-white transition duration-300" href="shop.html">Shop</a>
+                    <a class="text-gray-400 hover:text-white transition duration-300" href="about.html">About</a>
+                    <a class="text-gray-400 hover:text-white transition duration-300" href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="text-gray-400 text-center mt-4">
+                © 2023 Bronx Luggage. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
